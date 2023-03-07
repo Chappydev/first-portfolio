@@ -1,21 +1,38 @@
+<script>
+  import Skill from "./Skill.svelte";
+
+
+  const goodSkills = [
+    {name: 'HTML'},
+    {name: 'CSS'},
+    {name: 'Javascript'},
+    {name: 'React'},
+  ];
+
+  const otherSkills = [
+    {name: 'SQL'},
+    {name: 'MongoDB'},
+    {name: 'Svelte'},
+    {name: 'Express'},
+    {name: 'NodeJS'},
+  ]
+</script>
+
 <section id="skills">
   <div>
     <h2>I'm <span class="colored-orange">good</span> at these</h2>
     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Javascript</li>
-      <li>React</li>
+      {#each goodSkills as skill }
+        <li><Skill {skill}/></li> 
+      {/each}
     </ul>
   </div>
   <div>
     <h2>I'm <span class="colored-orange">learning</span> these</h2>
     <ul>
-      <li>SQL</li>
-      <li>MongoDB</li>
-      <li>Svelte</li>
-      <li>Express</li>
-      <li>NodeJS</li>
+      {#each otherSkills as skill }
+        <li><Skill {skill}/></li> 
+      {/each}
     </ul>
   </div>
 </section>
@@ -68,11 +85,9 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 0.5em;
       width: 90%;
+      justify-items: center;
       li {
-        text-align: center;
-        padding: 0.4em;
-        border-radius: 25% / 50%;
-        border: 2px solid orange;
+        width: clamp(90px, 90%, 125px);
       }
     }
   }
