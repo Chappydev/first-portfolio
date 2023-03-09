@@ -114,12 +114,17 @@ section:not(:last-child) {
   border-bottom: 1px solid white;
 }
 
+section:not(:last-child) {
+  padding-bottom: 2rem;
+}
+
 section {
   margin-top: 2rem;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Fragment Mono", monospace;
 }
