@@ -20,7 +20,7 @@
 
 <section id="skills">
   <div>
-    <h2>I'm <span class="colored-orange">good</span> at these</h2>
+    <h2>I'm <span class="orange">good</span> at these</h2>
     <ul>
       {#each goodSkills as skill }
         <li><Skill {skill}/></li> 
@@ -28,7 +28,7 @@
     </ul>
   </div>
   <div>
-    <h2>I'm <span class="colored-orange">learning</span> these</h2>
+    <h2>I'm <span class="orange">learning</span> these</h2>
     <ul>
       {#each otherSkills as skill }
         <li><Skill {skill}/></li> 
@@ -52,10 +52,6 @@
   h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-  }
-
-  .colored-orange {
-    color: orange;
   }
 
   div:has(ul) {
