@@ -38,6 +38,8 @@
 </section>
 
 <style lang="scss">
+  @use './partials/mixins.scss' as m;
+
   // TODO: make responsive
   //       - make line a simple border that fills the full height
   section {
@@ -58,21 +60,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    &:first-of-type {
-      position: relative;
-      padding-bottom: 2rem;
-      &::after {
-        content: '';
-        position: absolute;
-        width: 70%;
-        height: 1px;
-        bottom: 0;
-        background-color: white;
-      }
-    }
-    &:not(:first-of-type) {
-      margin-top: 2rem;
-    }
+    @include m.line-spacer;
+    // &:first-of-type {
+    //   position: relative;
+    //   padding-bottom: 2rem;
+    //   &::after {
+    //     content: '';
+    //     position: absolute;
+    //     width: 70%;
+    //     height: 1px;
+    //     bottom: 0;
+    //     background-color: white;
+    //   }
+    // }
+    // &:not(:first-of-type) {
+    //   margin-top: 2rem;
+    // }
     ul {
       // TODO: fix the text bubbles getting stretched out on
       //       larger screens

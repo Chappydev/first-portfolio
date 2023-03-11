@@ -1,0 +1,17 @@
+@mixin line-spacer {
+  &:not(:last-of-type) {
+    position: relative;
+    padding-bottom: 2rem;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 70%;
+      height: 1px;
+      bottom: 0;
+      background-color: white;
+    }
+  }
+  &:not(:first-of-type) {
+    margin-top: 2rem;
+  }
+}
