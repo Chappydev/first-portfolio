@@ -97,6 +97,10 @@ select {
 
 // END OF RESET
 
+:root {
+  font-size: 16px;
+}
+
 :root,
 #app {
   color: white;
@@ -127,4 +131,8 @@ h2,
 h3,
 h4 {
   font-family: "Fragment Mono", monospace;
+}
+
+.orange {
+  color: orange;
 }

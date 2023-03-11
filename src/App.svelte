@@ -1,4 +1,5 @@
 <script>
+  import AboutMe from "./lib/AboutMe.svelte";
   import Hero from "./lib/Hero.svelte";
   import Navbar from "./lib/Navbar.svelte";
   import Projects from "./lib/Projects.svelte";
@@ -10,12 +11,8 @@
 
 <Hero />
 
+<AboutMe/>
+
 <Skills/>
 
 <Projects />
-
-<style lang="scss">
-  :global(.orange) {
-    color: orange;
-  }
-</style>
