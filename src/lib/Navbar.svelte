@@ -12,8 +12,5 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    a {
-      color: inherit;
-    }
   }
 </style>
