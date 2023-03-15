@@ -32,8 +32,6 @@
   section {
     display: flex;
     flex-direction: column;
-  }
-  h2 {
-    align-self: center;
+    align-items: center;
   }
 </style>

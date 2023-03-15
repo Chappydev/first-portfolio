@@ -38,12 +38,18 @@
 </div>
 
 <style lang="scss">
+  @use 'partials/mixins' as m;
+  @use 'partials/variables' as v;
+
   .wrapper {
-    display: grid;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
-    padding: 0 1rem;
+    padding: 0 v.$outer-padding;
     margin-top: 2rem;
+    @include m.max-width;
+
   }
 
   img {
@@ -73,8 +79,8 @@
 
   .buttons {
     display: flex;
-    justify-self: stretch;
     justify-content: space-evenly;
+    align-self: stretch;
 
     a {
       padding: 0.5em 1.2em;

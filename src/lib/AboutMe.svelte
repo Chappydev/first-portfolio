@@ -24,12 +24,17 @@
 
 <style lang="scss">
   @use './partials/mixins.scss' as m;
+  @use './partials/variables' as v;
 
   .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 v.$outer-padding;
+
+    p {
+      @include m.max-width;
+    }
 
     > p:not(:first-child) {
       margin-top: 1.5em;
