@@ -27,6 +27,7 @@
   @use './partials/variables' as v;
 
   .wrapper {
+    flex: 1 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
