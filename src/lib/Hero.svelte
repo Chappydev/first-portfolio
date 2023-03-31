@@ -16,6 +16,8 @@
 </div>
 
 <style lang="scss">
+  @use './partials/mixins' as m;
+
   .wrapper {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -109,7 +111,7 @@
     text-align: left;
   }
 
-  @media screen and (max-width: 690px) {
+  @include m.for-size(s-down) {
     .wrapper > div {
       flex-direction: column;
       justify-content: center;

@@ -19,3 +19,15 @@
 @mixin max-width {
   max-width: 400px;
 }
+
+@mixin for-size($size) {
+  @if $size == s-down {
+    @media (max-width: 689px) {
+      @content;
+    }
+  } @else if $size == m-up {
+    @media (min-width: 690px) {
+      @content;
+    }
+  }
+}

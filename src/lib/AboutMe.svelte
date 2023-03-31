@@ -40,12 +40,30 @@
       margin-top: 1.5em;
     }
 
-    @include m.line-spacer;  
+    @include m.for-size(s-down) {
+      @include m.line-spacer;  
+    }
+
+    @include m.for-size(m-up) {
+      padding: v.$outer-padding;
+    }
+
+    &:first-of-type {
+      @include m.for-size(m-up) {
+        justify-content: center;
+        border-right: 1px solid white;
+      }
+    }
   }
+
 
   section {
     display: flex;
     flex-direction: column;
+
+    @include m.for-size(m-up) {
+      flex-direction: row;
+    }
   
     h2 {
       text-align: center;

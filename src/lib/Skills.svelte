@@ -38,13 +38,18 @@
 </section>
 
 <style lang="scss">
-  @use './partials/mixins.scss' as m;
+  @use './partials/mixins' as m;
+  @use './partials/variables' as v;
 
   // TODO: make responsive
   //       - make line a simple border that fills the full height
   section {
     display: flex;
     flex-direction: column;
+
+    @include m.for-size(m-up) {
+      flex-direction: row;
+    }
   }
 
   section:first-child {
@@ -60,7 +65,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include m.line-spacer;
+    @include m.for-size(s-down) {
+      @include m.line-spacer;  
+    }
+
+    @include m.for-size(m-up) {
+      padding: v.$outer-padding;
+    }
+
+    &:first-of-type {
+      @include m.for-size(m-up) {
+        border-right: 1px solid white;
+      }
+    }
     // &:first-of-type {
     //   position: relative;
     //   padding-bottom: 2rem;
