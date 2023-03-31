@@ -26,6 +26,8 @@
 </section>
 
 <style lang="scss">
+  @use './partials/mixins' as m;
+
   section {
     > * {
       padding: 0 1rem;
@@ -48,6 +50,18 @@
       }
 
       margin-top: 0.5rem;
+    }
+  }
+
+  @include m.for-size(m-up) {
+    address {
+      flex-direction: row;
+      > div {
+        flex: 1 0 0;
+        display: flex;
+        justify-content: center;
+        gap: 0.6em;
+      }
     }
   }
 </style>
