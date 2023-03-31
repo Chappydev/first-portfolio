@@ -96,9 +96,10 @@
     // &:not(:first-of-type) {
     //   margin-top: 2rem;
     // }
+    > * {
+      @include m.max-width;
+    }
     ul {
-      // TODO: fix the text bubbles getting stretched out on
-      //       larger screens
       list-style: none;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
