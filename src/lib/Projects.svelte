@@ -13,7 +13,7 @@
         'I had no experience with tree structures before this project, so I learned a lot about how to work with trees. Representing the tree structure in the database proved especially challenging, requiring a lot of thought and iteration before landing on a working solution.',
         'The lines between tree nodes gave me a lot of trouble throughout the project. When trying to animate the color change of the line, I found a limitation in the capabilities of CSS, so I implemented the animation by combining a custom hook with the svg \'linearGradient\' element'
       ],
-      img: '../../public/GoalTree.png',
+      img: '/GoalTree.png',
       github: 'https://github.com/Chappydev/goal-tree',
       link: 'https://goaltree.onrender.com'
     }
