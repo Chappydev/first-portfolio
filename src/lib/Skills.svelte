@@ -48,6 +48,8 @@
     flex-direction: column;
 
     @include m.for-size(m-up) {
+      margin-top: 0;
+      padding-bottom: 0;
       > div {
         flex: 1 0 0;
       }

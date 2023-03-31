@@ -63,6 +63,8 @@
     flex-direction: column;
 
     @include m.for-size(m-up) {
+      margin-top: 0;
+      padding-bottom: 0;
       flex-direction: row;
     }
   

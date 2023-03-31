@@ -120,14 +120,12 @@ section:not(:last-child) {
   border-bottom: 1px solid white;
 }
 
-@include m.for-size(s-down) {
-  section:not(:last-child) {
-    padding-bottom: 2rem;
-  }
+section {
+  margin-top: 2rem;
+}
 
-  section {
-    margin-top: 2rem;
-  }
+section {
+  padding-bottom: 2rem;
 }
 
 h1,
