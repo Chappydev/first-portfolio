@@ -16,9 +16,9 @@
 
 <AboutMe/>
 
-<Skills/>
-
 <Projects />
+
+<Skills/>
 
 <Contact />
 
