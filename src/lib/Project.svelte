@@ -1,6 +1,4 @@
 <script>
-  import { onMount } from "svelte";
-
   export let project;
 
   let viewportHeight;
@@ -48,7 +46,7 @@
 
   .wrapper {
     padding: 0 v.$outer-padding;
-    margin-top: 2rem;
+    margin-top: 4rem;
     @include m.for-size(s-down) {
       @include m.max-width;
       display: flex;
@@ -71,6 +69,7 @@
     aspect-ratio: 3 / 2;
     object-fit: cover;
     width: min(90%, 350px);
+    border-radius: 0.8rem;
     position: relative;
     left: -800px;
     opacity: 0;
@@ -125,7 +124,7 @@
     }
 
     .buttons {
-      grid-column: 1 / 2;
+      grid-column: 1 / 3;
       justify-self: stretch;
     }
   }
