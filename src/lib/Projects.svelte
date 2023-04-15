@@ -4,6 +4,23 @@
 
   const projects = [
     {
+      name: 'AI-Chan',
+      technologies: [
+        'Next.js', 'SASS', 'OpenAI', 'React Joyride'
+      ],
+      description: "AI-Chan is a language assistant that helps japanese learners' overcome challenges that are beyond the capabilities of other tools such as dictionaries.",
+      challenges: [
+        // Something about the openai api,
+        'While the gpt-3.5 model is incredibly powerful, getting consistently helpful responses required a lot of careful tuning of the prompts.',
+        // Managing chat state,
+        // Something about react-joyride
+        'I ran into confusion when trying to implement some more complex features for my application tour using React Joyride. The documentation did not have a great explanation of how to achieve what I wanted. However, I was able to reference the code for the official demo to work out how they managed to achieve a similar feature and replicate that in my own application.'
+      ],
+      img: '/AIChan.png',
+      github: 'https://github.com/Chappydev/AIChan',
+      link: 'https://aichan.vercel.app/'
+    },
+    {
       name: 'GoalTree!',
       technologies: [
         'React', 'React-Query', 'SASS', 'Express', 'MongoDB'
