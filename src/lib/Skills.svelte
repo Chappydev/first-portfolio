@@ -5,16 +5,18 @@
   const goodSkills = [
     {name: 'HTML'},
     {name: 'CSS'},
+    {name: 'SASS'},
     {name: 'Javascript'},
     {name: 'React'},
   ];
 
   const otherSkills = [
+    {name: 'Next.js'},
     {name: 'SQL'},
     {name: 'MongoDB'},
     {name: 'Svelte'},
-    {name: 'Express'},
     {name: 'NodeJS'},
+    {name: 'Express'},
   ]
 </script>
 
