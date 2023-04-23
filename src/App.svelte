@@ -8,11 +8,9 @@
 
 </script>
 
-<div id="intro-section">
-  <Navbar />
+<Navbar />
 
-  <Hero />
-</div>
+<Hero />
 
 <AboutMe/>
 
@@ -21,11 +19,3 @@
 <Skills/>
 
 <Contact />
-
-<style lang="scss">
-  #intro-section {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr;
-  }
-</style>

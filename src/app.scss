@@ -1,4 +1,5 @@
 @use "./lib/partials/mixins" as m;
+@use "./lib/partials/variables" as v;
 
 /* RESET */
 /* Box sizing rules */
@@ -103,10 +104,18 @@ select {
   font-size: 16px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root,
 #app {
   color: white;
-  background-color: black;
+  background-color: #101010;
+}
+
+:root {
+  scroll-padding-top: v.$navbar-height;
 }
 
 #app {

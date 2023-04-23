@@ -19,6 +19,7 @@
   @use './partials/mixins' as m;
 
   .wrapper {
+    height: 100vh;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     > div {
