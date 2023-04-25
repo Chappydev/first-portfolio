@@ -43,6 +43,7 @@
 <style lang="scss">
   @use 'partials/mixins' as m;
   @use 'partials/variables' as v;
+  @use 'partials/colors' as c;
 
   .wrapper {
     padding: 0 v.$outer-padding;
@@ -102,11 +103,18 @@
     justify-content: space-evenly;
 
     a {
+      font-family: v.$header-fonts;
       padding: 0.5em 1.2em;
       border-radius: 30% / 50%;
       border: 2px solid orange;
-      color: white;
+      background-color: orange;
+      color: black;
       text-decoration: none;
+      transition: opacity 350ms ease-out;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 
