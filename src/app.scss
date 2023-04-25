@@ -1,5 +1,6 @@
 @use "./lib/partials/mixins" as m;
 @use "./lib/partials/variables" as v;
+@use "./lib/partials/colors" as c;
 
 /* RESET */
 /* Box sizing rules */
@@ -111,7 +112,7 @@ html {
 :root,
 #app {
   color: white;
-  background-color: #101010;
+  background-color: c.$black;
 }
 
 :root {
@@ -141,7 +142,11 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Fragment Mono", monospace;
+  font-family: v.$header-fonts;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
 
 a {
