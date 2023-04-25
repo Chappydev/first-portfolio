@@ -8,15 +8,15 @@
   </div>
   <div class="wrapper">
     <p>
-      I am a passionate learner. For as long as I can remember, 
+      I am first and foremost a passionate learner. For as long as I can remember, 
       from practicing yo-yo tricks to teaching myself Japanese, 
-      I've always loved learning new things and developing new skills.
+      I've always loved the challenge of learning a new skill.
     </p>
     <p>
       Right now, I am passionate about the web, and am determined 
       to become the best developer I can be. I am confident that my
-      skills with frontend and backend technologies, and more importantly,
-      my ability to quickly pick up new skills, would make me a strong 
+      skills with both frontend and backend technologies, and more importantly,
+      my ability to quickly pick up new skills when the need arises, make me a strong 
       addition to any developer team.
     </p>
   </div>
