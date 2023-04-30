@@ -8,8 +8,8 @@
       <div class="right">VIM Motions</div>
       <div class="left">勉強は楽しい</div>
       <div class="right">効率的な勉強法</div>
-      <div class="left">self.learnToCode()</div>
-      <div class="right">Let's try this...</div>
+      <div class="left">learnToCode()</div>
+      <div class="right">Let's try this</div>
       <div class="left">ウェブ開発</div>
     </div>
   </div>
